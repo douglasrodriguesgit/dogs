@@ -3,7 +3,7 @@ import React from 'react'
 const UserStats = () => {
   return (
     <div>
-      Estatisticas 
+      Estatisticas dados
       
     </div>
   )
