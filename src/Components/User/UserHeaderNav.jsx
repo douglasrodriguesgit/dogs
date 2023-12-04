@@ -17,6 +17,9 @@ const UserHeaderNav = () => {
     navigate("/login");
   }
 
+  const media = window.matchMedia("(max-width: 40rem)");
+  console.log(media);
+
   return (
     <nav className={styles.nav}>
       <NavLink to="/conta" end>
@@ -30,14 +33,11 @@ const UserHeaderNav = () => {
         {mobile && "Estatísticas"}{" "}
       </NavLink>
 
-
       <NavLink to="/conta/postar">
         {" "}
         <AdicionarFoto />
         {mobile && "Adicionar Foto"}{" "}
       </NavLink>
-
-  
 
       <button onClick={handleLogout}>
         <Sair />
