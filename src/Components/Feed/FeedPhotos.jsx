@@ -4,6 +4,7 @@ import usefetch from "../Login/Hooks/usefetch";
 import { PHOTOS_GET } from "../../api";
 import Error from "../Helper/Error";
 import Loading from "../Helper/Loading";
+import styles from "./FeedPhotos.module.css";
 
 const FeedPhotos = () => {
   const { data, error, loading, request } = usefetch();
@@ -21,7 +22,7 @@ const FeedPhotos = () => {
   if (loading) return <Loading />;
   if (data)
     return (
-      <ul>
+      <ul className={`${styles.feed} animeLeft`}>
         {data.map((photo) => (
           <FeedPhotosItem key={photo.id} photo={photo} />
         ))}
