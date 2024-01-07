@@ -5,6 +5,10 @@
   margin: 1rem;
 }
 
+.single.form {
+  margin: 1rem 0;
+}
+
 .textarea {
   display: block;
   width: 100%;
@@ -22,13 +26,13 @@
 .textarea:hover {
   outline: none;
   border-color: #fb1;
-  background: #fff;
+  background: white;
   box-shadow: 0 0 0 3px #fea;
 }
 
 .button {
-  cursor: pointer;
   border: none;
+  cursor: pointer;
   color: #333;
   background: transparent;
   font-size: 1rem;
@@ -36,9 +40,9 @@
   overflow: hidden;
 }
 
-.button:focus ,
-.button:hover  {
- outline: none;
+.button:focus,
+.button:hover {
+  outline: none;
 }
 
 .button:focus svg path,
