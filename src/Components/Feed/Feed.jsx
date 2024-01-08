@@ -2,6 +2,7 @@ import React from "react";
 import FeedModal from "./FeedModal";
 import FeedPhotos from "./FeedPhotos";
 
+
 const Feed = ({ user }) => {
   const [modalPhoto, setModalPhoto] = React.useState(null);
   const [pages, setPages] = React.useState([1]);
@@ -10,7 +11,7 @@ const Feed = ({ user }) => {
   React.useEffect(() => {
     let wait = false;
     function infiniteScroll() {
-      if (infinite ) {
+      if (infinite) {
         const scroll = window.scrollY;
         const height = document.body.offsetHeight - window.innerHeight;
         if (scroll > height * 0.75 && !wait) {
@@ -48,5 +49,7 @@ const Feed = ({ user }) => {
     </div>
   );
 };
+
+
 
 export default Feed;

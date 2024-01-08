@@ -12,7 +12,7 @@ import Photo from "./Components/Photo/Photo";
 import UserProfile from "./Components/User/UserProfile";
 import NotFound from "./Components/NotFound";
 
-const App = () => {
+function App() {
   return (
     <div>
       <BrowserRouter>
@@ -21,24 +21,23 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
-            <Route path="foto/:id" element={<Photo />} />
-            <Route path="perfil/:user" element={<UserProfile />} />
-            <Route path="*" element={<NotFound />} />
             <Route
               path="conta/*"
               element={
                 <ProtectedRoute>
-                  {" "}
-                  <User />{" "}
+                  <User />
                 </ProtectedRoute>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
+            <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>
       </BrowserRouter>
     </div>
   );
-};
+}
 
 export default App;
