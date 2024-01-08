@@ -7,7 +7,7 @@ const UserProfile = () => {
   return (
     <section className="container mainSection">
       <h1 className='title'>{user}</h1>
-      <Feed user={user} />git add -A
+      <Feed user={user} />
     </section>
   );
 };
