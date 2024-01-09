@@ -9,6 +9,7 @@ import NotFound from "../NotFound";
 
 const User = () => {
   const { data } = React.useContext(UserContext);
+
   return (
     <section className="container">
       <UserHeader />

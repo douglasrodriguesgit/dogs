@@ -9,11 +9,11 @@ import usefetch from './Hooks/usefetch'
 
 const LoginCreate = () => {
   const username = useForm();
-  const email = useForm("email");
+  const email = useForm('email');
   const password = useForm();
 
   const { userLogin } = React.useContext(UserContext);
-  const { loading, error, request } = usefetch();
+  const { loading, error, request } = useFetch();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -28,7 +28,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
-      <h1 className="title">Cadastra-se</h1>
+      <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="Email" type="email" name="email" {...email} />

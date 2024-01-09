@@ -14,12 +14,12 @@ const FeedModal = ({ photo, setModalPhoto }) => {
     request(url, options);
   }, [photo, request]);
 
-  function handleOutSideClick(event) {
-    if (event.currentTarget === event.target) setModalPhoto(null);
+  function handleOutsideClick(event) {
+    if (event.target === event.currentTarget) setModalPhoto(null);
   }
 
   return (
-    <div className={styles.modal} onClick={handleOutSideClick}>
+    <div className={styles.modal} onClick={handleOutsideClick}>
       {error && <Error error={error} />}
       {loading && <Loading />}
       {data && <PhotoContent data={data} />}

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../UserContext";
 import { ReactComponent as MinhasFotos } from "../../Assets/feed.svg";
-import { ReactComponent as Estatiscas } from "../../Assets/estatisticas.svg";
+import { ReactComponent as Estatisticas } from "../../Assets/estatisticas.svg";
 import { ReactComponent as AdicionarFoto } from "../../Assets/adicionar.svg";
 import { ReactComponent as Sair } from "../../Assets/sair.svg";
 import styles from "./UserHeaderNav.module.css";
@@ -51,15 +51,13 @@ const UserHeaderNav = () => {
         </NavLink>
 
         <NavLink to="/conta/estatisticas">
-          {" "}
-          <Estatiscas />
-          {mobile && "Estatísticas"}{" "}
+          <Estatisticas />
+          {mobile && "Estatísticas"}
         </NavLink>
 
         <NavLink to="/conta/postar">
-          {" "}
           <AdicionarFoto />
-          {mobile && "Adicionar Foto"}{" "}
+          {mobile && "Adicionar Foto"}
         </NavLink>
 
         <button onClick={handleLogout}>
