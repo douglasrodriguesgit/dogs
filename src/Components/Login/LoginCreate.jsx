@@ -5,15 +5,16 @@ import useForm from "./Hooks/useForm";
 import Error from "../Helper/Error";
 import { USER_POST } from "../../api";
 import UserContext from "../../UserContext";
-import usefetch from './Hooks/usefetch'
+import usefetch from "./Hooks/usefetch";
+import Head from "../Helper/Head";
 
 const LoginCreate = () => {
   const username = useForm();
-  const email = useForm('email');
+  const email = useForm("email");
   const password = useForm();
 
   const { userLogin } = React.useContext(UserContext);
-  const { loading, error, request } = useFetch();
+  const { loading, error, request } = usefetch();
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -28,6 +29,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title="Crie sua conta" />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
