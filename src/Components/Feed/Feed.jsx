@@ -5,7 +5,9 @@ import FeedPhotos from "./FeedPhotos";
 
 const Feed = ({ user }) => {
   const [modalPhoto, setModalPhoto] = React.useState(null);
+
   const [pages, setPages] = React.useState([1]);
+  
   const [infinite, setInfinite] = React.useState(true);
 
   React.useEffect(() => {
