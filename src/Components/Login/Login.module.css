@@ -1,6 +1,7 @@
 .login {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
   gap: 2rem;
 }
 
@@ -9,10 +10,9 @@
   display: block;
   background: url("../../Assets/login.jpg") no-repeat center center;
   background-size: cover;
-
 }
 
-.form {
+.forms {
   max-width: 30rem;
   padding: 1rem;
 }
@@ -24,7 +24,7 @@
   .login::before {
     display: none;
   }
-  .form {
+  .forms {
     max-width: 100%;
   }
 }
