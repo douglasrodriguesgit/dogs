@@ -20,10 +20,7 @@ function App() {
           <Header />
           <main className="AppBody">
             <Routes>
-              <Route
-                path="/https://douglasrodriguesgit.github.io/dogs/"
-                element={<Home />}
-              />
+              <Route path="/" element={<Home />} />
               <Route path="login/*" element={<Login />} />
               <Route
                 path="conta/*"
