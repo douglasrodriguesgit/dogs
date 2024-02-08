@@ -3,7 +3,7 @@
 Projeto Realizado através do curso de React da Origamid
 
 ## Introdução
-O aplicativo Dogs é uma rede social para cachorros, no aplivcativo é possível realizar o cadastro, realizar comentários, postar e deletar fotos e a verificação do gráfico de desempenho da performance.
+O aplicativo Dogs é uma rede social para cachorros, no aplicativo é possível realizar o cadastro, realizar comentários, postar e deletar fotos e a verificação do gráfico de desempenho da performance.
 Nesse projeto foi utilizado para a realização do login autenticação via json web token, foi consumida a API para a relização de criação de usuário, validação de formulário e postagem das fotos.
 
 ### Tecnologias usadas:
