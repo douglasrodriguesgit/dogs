@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
@@ -15,7 +15,7 @@ import NotFound from "./Components/NotFound";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <UserStorage>
           <Header />
           <main className="AppBody">
@@ -38,7 +38,7 @@ function App() {
 
           <Footer />
         </UserStorage>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
